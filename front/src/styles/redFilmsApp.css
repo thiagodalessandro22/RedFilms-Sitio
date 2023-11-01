@@ -1,0 +1,54 @@
+.textoApp{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+}
+
+.textoApp:hover{
+    color:red;
+    transform: scale(1.15);
+    transition: all 0.5s; 
+}
+
+.imgApp{
+    width: 34%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.imgApp:hover{
+    transform: scale(1.09);
+    transition: all 0.5s; 
+}
+
+.textoApp2{
+    color: black;    
+    font-size: 26px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3em;;
+}
+
+.textoRedFilms{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textoRedFilms:hover{
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+
+.textoPromocion{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoPromocion:hover{
+    color:red;
+    transform:scaleX(120deg);
+    transition: all 0.5s; 
+}
+
+.rojo{
+    color: red;
+}

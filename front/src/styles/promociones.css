@@ -1,0 +1,106 @@
+.textoPromocion{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoPromocion:hover{
+    color:red;
+    transform:scaleX(120deg);
+    transition: all 0.5s; 
+}
+
+.promocion{
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.promocion .info{
+    color: rgb(228, 11, 11);
+    font-weight: 450;
+    font-style: italic;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.promocion .info p{
+    font-size: 11px;
+}
+
+.promocion img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.promocion:nth-child{
+    flex-direction: row-reverse;
+}
+
+/* ----------------- Promocion 2 -------------------------------------- */
+
+.textoPromocion{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoPromocion:hover{
+    color:red;
+    transform:scaleX(120deg);
+    transition: all 0.5s; 
+}
+
+.promocion1{
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.promocion1 .info2{
+    color: rgb(228, 11, 11);
+    font-weight: 450;
+    font-style: italic;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.promocion1 .info2 p{
+    font-size: 11px;
+}
+
+.promocion1 img{
+    border-radius: 15px;
+    display: block;
+    max-width: 225px;
+}
+
+.promocion1:nth-child{
+    flex-direction: row;
+}
+
+.textoTituloPlan:hover{
+    transform: scale(1.15);
+    transition: all 0.5s; 
+}
+
+.rojo{
+    color: red;
+}
+
+.textoPlan{
+    color: black;
+    font-size: 19px;
+    font-family:'Franklin Gothic Medium';
+}

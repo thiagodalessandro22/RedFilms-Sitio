@@ -1,0 +1,107 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgb(234, 234, 234);
+}
+
+.textLogo:hover{
+    transform: scale(1.09);
+    transition: all 0.5s;
+    color: red; 
+}
+
+.logo{
+    margin-left: 2px
+}
+
+.logo:hover{
+    transform: rotate(120deg);
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.t-center{
+    text-align: center;
+}
+
+.bienvenidos{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.redFilms:hover{
+    transform: scale(1.15);
+    transition: all 0.5s; 
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p{
+    font-size: 20px;
+}
+
+.testimonio{
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+
+.imgCinta{
+    width: 45%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.imgCinta:hover{
+    transform: scale(1.15);
+    transition: all 0.6s; 
+    transform: rotate(160deg);
+}
+
+.imgHome{
+    width: 87%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.imgHome:hover{
+    transform: scale(1.05);
+    transition: all 0.5s; 
+}
+
+.textoEncuesta{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoEncuesta:hover{
+    color:red;
+    transform: scale(1.15);
+    transition: all 0.5s; 
+}
