@@ -105,3 +105,16 @@ body{
     transform: scale(1.15);
     transition: all 0.5s; 
 }
+
+
+
+.imgHomeLog{
+    width: 60%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.imgHomeLog:hover{
+    transform: scale(1.02);
+    transition: all 0.5s; 
+}

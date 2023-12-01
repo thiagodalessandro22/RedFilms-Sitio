@@ -27,11 +27,12 @@ const HomePage = (props) => {
                 <div className="columnas">
                     <div className="bienvenidos redFilms">
                         <h2>Bienvenidos a RedFilms - #1 Movie Streaming</h2>
-                        <p><b style={color.red}>RedFilms</b> es un centro de medios moderno que es una solución integral
-                        para el entretenimiento de video. Descubre, ve y organiza contenido de video desde 
-                        complementos fáciles de instalar.
+                        <p><b style={color.red}>RedFilms</b> es un centro de medios moderno que brinda la posibilidad
+                        de rankear peliculas y enterarte de todas las noticias alrededor del cine.
                         </p>
-                        <p>Peliculas, TV shows, TV en vivo y canles web - encuentra todo esto en RedFilms.</p>
+                        <p>Peliculas, TV shows, TV en vivo y canales web - encuentra todo esto en RedFilms. 
+                            Descargá nuestros torrents y empezá a disfrutar.
+                        </p>
                     </div>
                     <div className="testimonio t-center">
                             <div>
@@ -42,7 +43,7 @@ const HomePage = (props) => {
             </div>
             <div className="holder">  
                 <div className="t-center">
-                    <h5 style={color.red2}>Visitá nuestra encuesta:</h5>
+                    <h5 style={color.red2}>Visitá nuestro ranking:</h5>
                     <div>
                         <Link to='/topPeliculas'>
                             <h1 className="textoEncuesta">Las 5 Mejores Peliculas de la Historia</h1>
@@ -55,7 +56,32 @@ const HomePage = (props) => {
                             </div>
                         </Link>
                     </div>
+                    <br></br>
+                    <br></br>
+                    <div>
+                        <h5 style={color.red2}>Visitá nuestra sección de estrenos:</h5>
+                        <Link to='/estrenos'>
+                            <h1 className="textoEncuesta">Los Estrenos Más Esperados!</h1>
+                        </Link>
+                        <Link to='/estrenos'>
+                            <div style={padding.top}>
+                                <img  className="imgHome" src="img/home/estrenos.jpg" alt="Estrenos"/>
+                            </div>
+                        </Link>
+                    </div>
+                    <div>
+                        <h5 style={color.red2}>Rankeá la última película que viste:</h5>
+                        <Link to='/novedades'>
+                            <h1 className="textoEncuesta">Agregá tu película aquí!!</h1>
+                        </Link>
+                        <Link to='/novedades'>
+                            <div>
+                                <img  className="imgHomeLog" src="img/home/logFilms.png" alt="Log"/>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
+                <br></br>
             </div>
         </main>
     );

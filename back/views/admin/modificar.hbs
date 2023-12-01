@@ -1,0 +1,35 @@
+<div style="background-color: rgb(255, 255, 255); margin: 50px auto">
+    <div class="row">
+        <div style="color: #000000" class="col-6 offset-3">
+            <h4 style="padding-bottom: 10px" class="text-center">Modifica los datos de tu pelicula!</h4>
+            <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" style="background-color: #be1e1e; color: white" placeholder="Titulo" value="{{novedad.titulo}}" class="form-control"
+                        name="titulo">
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea type="text" style="background-color: #be1e1e; color: white" placeholder="Valoracion" class="form-control"
+                        name="valoracion">{{novedad.valoracion}}</textarea>
+                </div>
+                <br>
+                <div class="mb-3 row">
+                    <label for="">Subir imagen: <input type="file" class="form-control" name="imagen" id="imagen" />
+                    </label>
+                    <p>
+                        <label for=""><input type="checkbox" name="img_delete" id="img_delete" value="1" />
+                            Eliminar imagen actual?
+                        </label>
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-danger">Modificar</button>
+            </form>
+            <br><br><br><br><br><br><br>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

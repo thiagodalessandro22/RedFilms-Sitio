@@ -1,12 +1,7 @@
-.imgTopPeliculas{
+.imgEstrenos{
     width: 60%;
     align-items: center;
     padding-left: 20%;
-}
-
-.imgTopPeliculas:hover{
-    transform: scale(1.05);
-    transition: all 0.5s; 
 }
 
 .textAlignCenter{

@@ -1,0 +1,80 @@
+<script>
+    export function getDateToString(date, withTime = false) {
+    if (date) {
+        if (withTime)
+            return moment(date).format('DD/MM/YYYY HH:mm:ss');
+        else
+            return moment(date).format('DD/MM/YYYY');
+    }
+    else {
+        return '';
+    }
+}
+</script>
+
+<style>
+    .table-red {
+    --bs-table-color: #000000;
+    --bs-table-bg: #e32e2e;
+    --bs-table-border-color: #c6acae;
+    --bs-table-striped-bg: #eccccf;
+    --bs-table-striped-color: #000000;
+    --bs-table-active-bg: #dfc2c4;
+    --bs-table-active-color:#000000;
+    --bs-table-hover-bg: #e5c7ca;
+    --bs-table-hover-color: #000000;
+    /*color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);*/
+    }
+</style>
+
+<div class="container" style="margin: 20px auto">
+    <div style="padding-bottom: 40px" class="row">
+        <p class="text-end">Hola <span style="color: red">{{usuario}}</span>! <a style="color: black" class="btn btn-danger" href="/admin/login/logout">Cerrar 
+        Sesión <i class="fas fa-sign-out-alt"></i></a></p>
+    </div>
+
+    <div style="padding-bottom: 10px" class="row">
+        <div class="col-7">
+            <h3>Agregá tu Pelicula!</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href="/admin/novedades/agregar">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            Nuevo</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-red">
+                        <th scope="col">Titulo</th>
+                        <th scope="col">
+                            <a style="color: black"><i class="fa fa-star" aria-hidden="false"></i></a>
+                            Valoración 
+                            <a style="color: black"><i class="fa fa-star" aria-hidden="false"></i></a>
+                        </th>
+                        <th scope="col">Imagen:</th>
+                        <th class="text-end"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <td class="col-black">{{titulo}}</td>
+                        <td class="col-black">{{valoracion}}</td>
+                        <td class="col-black">{{{imagen}}}</td>
+                        <td style= "padding-left: 40px"class="text-end">
+                            <a class="btn" href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a class="btn" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

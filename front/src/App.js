@@ -11,7 +11,7 @@ import RedFilmsAppPage from './pages/RedFilmsAppPage';
 import EstrenosPage from './pages/EstrenosPage';
 import PromocionesPage from './pages/PromocionesPage';
 import TopPeliculasPage from './pages/TopPeliculasPage';
-import ContactoPage from './pages/ContactoPage';
+import NovedadesPage from './pages/NovedadesPage';
 
 import './App.css';
 import './styles/home.css'
@@ -26,11 +26,11 @@ function App() {
       <Nav />
         <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/redFilmsApp" element={<RedFilmsAppPage />} />
+            <Route path="/contacto" element={<RedFilmsAppPage />} />
             <Route path="/estrenos" element={<EstrenosPage />} />
             <Route path="/promociones" element={<PromocionesPage />} />
             <Route path="/topPeliculas" element={<TopPeliculasPage />} />
-            <Route path="/contacto" element={<ContactoPage />} />
+            <Route path="/novedades" element={<NovedadesPage />} />
         </Routes>
       </BrowserRouter>
 

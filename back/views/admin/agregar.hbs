@@ -1,0 +1,25 @@
+<div style="background-color: rgb(215, 28, 28)">
+    <div class="row" style="margin: auto; padding-top: 100px">
+        <div style="color: #fff" class="col-6 offset-3">
+            <h4 style="padding-bottom: 10px" class="text-center">Agregá los datos de tu pelicula!</h4>
+            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Valoracion" name="valoracion"></textarea>
+                </div>
+                 <div class="mb-3 row">
+                    <label for="">Subir imagen: <input type="file" class="form-control" 
+                    name="imagen" id="imagen"/>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+            </form>
+            <br><br><br><br><br>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

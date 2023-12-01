@@ -22,9 +22,9 @@ const Promociones = (props) => {
                 <div className="info">
                     <h3 className="textoTituloPlan">Accedé al Plan Familiar</h3>
                     <p className="textoPlan">Incluye juegos móviles, series y películas; sin publicidad y sin límite.
-                    <span className="rojo">Puedes ver contenido en 1 dispositivo compatible a la vez.</span>
-                    Puedes ver en HD.
-                    <span className="rojo">Puedes descargar contenido en 1 dispositivo compatible a la vez.</span></p>
+                    <span className="rojo">&nbsp;Puedes ver contenido en 1 dispositivo compatible a la vez.</span>
+                    &nbsp;Puedes ver en HD.
+                    <span className="rojo">&nbsp;Puedes descargar contenido en 1 dispositivo compatible a la vez.</span></p>
                 </div>
             </div>
             <div className="promocion1">
@@ -32,10 +32,10 @@ const Promociones = (props) => {
                 <div className="info2">
                     <h3 className="textoTituloPlan">Accedé al Plan Estándar</h3>
                     <p className="textoPlan">Incluye juegos móviles, series y películas; sin publicidad y sin límite.
-                    <span className="rojo">Puedes ver contenido en 2 dispositivos compatibles a la vez.</span>
-                    Puedes ver en Full HD.
-                    <span className="rojo">Puedes descargar contenido en 2 dispositivos compatibles a la vez.</span>
-                    Opción para agregar hasta 1 miembro extra que no viva contigo.</p>
+                    <span className="rojo">&nbsp;Puedes ver contenido en 2 dispositivos compatibles a la vez.</span>
+                    &nbsp;Puedes ver en Full HD.
+                    <span className="rojo">&nbsp;Puedes descargar contenido en 2 dispositivos compatibles a la vez.</span>
+                    &nbsp;Opción para agregar hasta 1 miembro extra que no viva contigo.</p>
                 </div>
             </div>
             <div className="promocion">
@@ -44,12 +44,13 @@ const Promociones = (props) => {
                     <h3 style={colorBlack}className="textoTituloPlan">Del Cine a tu Casa con el <span className="rojo"><b>Plan Premium</b></span> </h3>
                     <p className="textoPlan">Incluye juegos móviles, series y películas; sin publicidad y sin límite.
                     <span className="rojo">Puedes ver contenido en 4 dispositivos compatibles a la vez.</span>
-                    Puedes ver en Ultra HD.
-                    <span className="rojo">Puedes descargar contenido en 6 dispositivos compatibles a la vez.</span>
-                    Opción para agregar hasta 2 miembros extras que no vivan contigo.
-                    <span className="rojo">Audio espacial de </span><b>RedFilms</b></p>
+                    &nbsp;Puedes ver en Ultra HD.
+                    <span className="rojo">&nbsp;Puedes descargar contenido en 6 dispositivos compatibles a la vez.</span>
+                    &nbsp;Opción para agregar hasta 2 miembros extras que no vivan contigo.
+                    <span className="rojo">&nbsp;Audio espacial de </span><b>RedFilms</b></p>
                 </div>
             </div>
+            <br></br>
         </div>
     );
 }
